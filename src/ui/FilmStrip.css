@@ -1,0 +1,40 @@
+.strip {
+  display: flex;
+  gap: 18px;
+  padding: 12px 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.strip::-webkit-scrollbar {
+  display: none;
+}
+
+.strip__item {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  min-width: 56px;
+  min-height: 44px;
+  scroll-snap-align: center;
+  opacity: 0.55;
+  transform: scale(0.88);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.strip__item--active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.strip__name {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.strip__item--active .strip__name {
+  color: var(--accent);
+}

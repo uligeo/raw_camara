@@ -1,0 +1,19 @@
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 14px 18px 10px;
+}
+
+.tabs__item {
+  flex: 1;
+  min-height: 44px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  transition: color 0.15s ease;
+}
+
+.tabs__item--active {
+  color: var(--accent);
+}

@@ -1,0 +1,35 @@
+.confirm {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 20px;
+  padding: 32px;
+  background: rgba(0, 0, 0, 0.82);
+  text-align: center;
+}
+
+.confirm__text {
+  margin: 0;
+  color: var(--text);
+}
+
+.confirm__actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.confirm__cancel,
+.confirm__discard {
+  min-height: 44px;
+  padding: 0 22px;
+  border-radius: 22px;
+  background: var(--control);
+  color: var(--text);
+}
+
+.confirm__discard {
+  background: var(--accent);
+  color: #1a1a00;
+}
